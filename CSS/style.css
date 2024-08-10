@@ -7,7 +7,7 @@
 :root {
     --primary-color: #4891ff;
     --light-color: #f4f4f6;
-    --dark-color: #111
+    --dark-color: #131316;
 }
 
 body {
@@ -63,6 +63,64 @@ img {
 
 .navbar ul li:last-child a {
     margin-left: 15px;
+}
+
+/* Hero */
+.hero {
+    margin-bottom: 50px;
+}
+
+.hero .container {
+    background: url('../Images/hero-bg.png') no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+    height: 550px;
+}
+
+.hero .hero-content {
+    width: 70%;
+}
+
+.hero .hero-text {
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+/* Video */
+.video {
+    padding: 10px 0 40px;
+}
+
+.video-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-preview {
+    margin-bottom: 20px;
+}
+
+/* Testimonials */
+.testimonials {
+    padding: 40px 0;
+}
+
+.testimonials .testimonials-heading {
+    width: 700px;
+    margin-bottom: 40px;
+}
+
+.testimonials-grid {
+    display: grid;
+    align-items: stretch;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.testimonials .card .person p:nth-of-type(1) {
+    margin-top: 30px;
+    font-weight: bold;
 }
 
 /* Utility Classes*/
@@ -149,4 +207,44 @@ img {
 
 .text-center {
     text-align: center;
+}
+
+/* Background */
+
+.bg-primary {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.bg-white {
+    background: var(--light-color);
+    color: #333;
+}
+
+.bg-dark {
+    background: var(--dark-color);
+    color: #fff;
+}
+
+.bg-black {
+    background: #131316;
+    color: #fff;
+}
+
+/* Cards */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff;
+    color: var(--dark-color);
+    border-radius: 10px;
+    padding: 45px;
+}
+
+.card:nth-of-type(1) {
+    height: 300px;
+}
+.card:nth-of-type(3) {
+    height: 340px;
 }
